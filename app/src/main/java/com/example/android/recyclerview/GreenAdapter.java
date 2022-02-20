@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 package com.example.android.recyclerview;
-
+// Andy Tran
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -93,6 +93,7 @@ public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHo
     // COMPLETED (1) Add an interface called ListItemClickListener
     // COMPLETED (2) Within that interface, define a void method called onListItemClick that takes an int as a parameter
     public interface ListItemClickListener {
+        // Added additional parameter for color change on click
         void onListItemClick(int clickedItemIndex, View itemView);
 
         // COMPLETED (10) Override ListItemClickListener's onListItemClick method
@@ -163,9 +164,12 @@ public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHo
     public void onBindViewHolder(NumberViewHolder holder, int position) {
         Log.d(TAG, "#" + position);
         holder.bind(position);
+
+        //Change color of view to pale blue if position is even
         if(position % 2 == 0){
             holder.itemView.setBackgroundResource(R.color.paleBlue);
         }
+        // Change color of view to tan if position is odd
         else{
             holder.itemView.setBackgroundResource(R.color.tan);
         }

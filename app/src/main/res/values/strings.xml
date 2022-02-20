@@ -13,6 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<!--Andy Tran -->
 <resources>
     <string name="app_name">RecyclerView</string>
     <string name="action_reset">Reset</string>

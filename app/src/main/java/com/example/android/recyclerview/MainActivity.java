@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 package com.example.android.recyclerview;
-
+// Andy Tran
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements GreenAdapter.List
 
         mToast.show();
 
+        //Changes color of clicked view to dark green
         itemView.setBackgroundResource(R.color.material900Green);
     }
 
